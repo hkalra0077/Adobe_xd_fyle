@@ -1,0 +1,467 @@
+
+/* Typography */
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6c757d;
+  /* 150% of font-size */
+}
+
+.r-btn {
+  padding: 5px 20px;
+  background-color: #eb2b3d !important;
+  color: #fff !important;
+}
+
+::selection {
+  background-color: #eb2b3d;
+  color: #fff;
+}
+
+.r-p {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.content-mg {
+  margin: 10px 0;
+}
+.content-box * + * {
+  margin: 20px 0;
+}
+.bg-sec {
+  background: #f8f9fa;
+}
+.title-box {
+  max-width: 600px;
+  text-align: center;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Navigation---------------------------------------------------------------------------- */
+nav .navbar-brand {
+  font-size: 30px;
+  color: #eb2b3d;
+  transition: 0.5s all;
+}
+nav .navbar-nav li {
+  margin-left: 15px;
+}
+nav .navbar-nav li a {
+  color: #eb2b3d !important;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+nav.r-nav {
+  background: transparent;
+  padding: 20px 0px;
+  transition: 0.5s all;
+}
+
+nav.r-nav.stickyadd {
+  background: #fff !important;
+  padding: 15px 0;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.5s all ease-in-out;
+}
+nav.stickyadd .navbar-brand {
+  color:#eb2b3d;
+  font-size: 40px;
+  transition: 0.5s all;
+}
+nav.stickyadd .navbar-nav .nav-link {
+  color: #eb2b3d!important;
+}
+.navbar .hamburger {
+  color: #fff;
+}
+nav.stickyadd .hamburger {
+  color: #000;
+}
+
+nav *,
+header * {
+  animation-delay: 0.5s;
+}
+
+/* ---------- */
+/* Home ---------------------------------------------------------*/
+#womeninredhat{
+  border-radius: 5px;
+  height:auto; 
+  max-width:100%;
+}
+
+.info{
+  font-size:16px; 
+  padding-bottom:25px;
+}
+
+.title{
+  color:#eb2b3d; 
+  padding-bottom:10px;
+}
+.subtitle{
+  font-weight:bold; 
+  padding-bottom:15px;
+}
+
+/* ---------- */
+
+/* Modal ---------------------------------------------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+.inputBox {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.inputBox label {
+  position: absolute;
+  top: 0;
+  color: #999;
+  transition: 0.2s ease all;
+}
+.inputBox input:focus{
+  border-color: #999; 
+  box-shadow: none;
+}
+.inputBox input:focus ~ label,
+.inputBox input:not(:placeholder-shown) ~ label {
+  top: -30px;
+  color: #333;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.inputBox input {
+  width: 100%;
+  margin-bottom: 40px; 
+  border: 1px solid #ccc;
+  border: none;
+  border-bottom: 2px solid #333;
+  font-weight: bold;
+  outline: none;
+}
+.checkbox-container {
+  display: flex;
+  margin-top: 3rem;
+}
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+.checkbox-container input[type="checkbox"] {
+  -webkit-appearance: none; 
+  appearance: none; 
+  width: 30px;
+  height: 20px;
+  border: 2px solid #eb2b3d;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px; 
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  background-color:#eb2b3d;
+  width: 30px;
+}
+
+.checkbox-container input[type="checkbox"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.model-footer{
+  border: none;
+}
+
+/* -----------------------*/
+
+
+/* Services ---------------------------------------------------------*/
+
+/* Carousel ---------------------------------------------------------*/
+.carousel-img{
+  border-radius: 7px;
+  height:400px;
+  object-fit: cover;
+}
+
+.card{
+  overflow: hidden;
+  position: relative;
+}
+
+.card-body{
+  width: 100%;
+  height: 100%;
+  top:0;
+  right:-100%;
+  position: absolute;
+  background:  #eb2b3d ;
+  color: #fff;
+  padding:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.card:hover .card-body{
+  right:0;
+}
+
+.card-title{
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+}
+.icon-lg {
+  font-size: 3rem;
+}
+.card-subtitle{
+  color: #fff;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.owl-carousel .owl-dot {
+  outline: none;
+}
+
+.owl-carousel .owl-dot:focus {
+  outline: none;
+}
+
+.owl-dots {
+  display: flex;
+  flex-direction: row;
+  transition: background-color 0.3s ease; 
+}
+
+/* Base dot styles */
+.owl-carousel .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: gray;
+  display: block;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Active dot styles */
+.owl-carousel .active span {
+  position: relative; 
+  background: #eb2b3d  !important;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Add a pseudo-element for the red border around the active dot */
+.owl-carousel .active span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px; 
+  height: 25px;
+  background: transparent; 
+  border: 2px solid #eb2b3d ; 
+  border-radius: 50%;
+  z-index: -1; 
+  outline: none;
+  box-shadow: none;
+}
+/* ----------------*/
+
+/* About us / Company Growth ---------------------------------------------------------*/
+.card-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.item {
+  background: #fff;
+  text-align: center;
+  padding: 30px 25px;
+  -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+  box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 0px;
+  border:5px solid rgba(0, 0, 0, 0.07);
+  margin-bottom: 30px;
+  -webkit-transition: all .5s ease 0;
+  transition: all .5s ease 0;
+  transition: all 0.5s ease 0s;
+}
+.item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.item:hover .item, .item:hover span.icon {
+  transform: scale(1.1); 
+  transition: transform 0.5s ease;
+}
+
+.item .icon {
+  font-size: 40px;
+  margin-bottom:25px;
+  color: #eb2b3d;   
+  width: 90px;
+  height: 90px;
+  line-height: 96px;
+  border-radius: 50px;
+}
+
+.active-text {
+  background-color:#eb2b3d !important;
+  color: white !important;
+}
+.active-text p {
+  color: white !important;
+}
+
+
+/* Footer ---------------------------------------------------------*/
+footer {
+  height: 300px;
+  background-color: #eb2b3d;
+}
+.r-icon ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.r-icon ul li {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.r-icon ul li img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+/* ----------------------*/
+
+/* buttons ------------------------------------------*/
+.btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited{
+  background-color: #eb2b3d !important; /* Your custom color */
+  border-color:  #eb2b3d; /* Your custom color */
+  color: white !important;
+  box-shadow: #eb2b3d;
+  outline: none;
+}
+
+.btn-light, .btn-light:hover, .btn-light:active, .btn-light:visited{
+  border-color:  #eb2b3d; /* Your custom color */
+  color: #eb2b3d !important;
+  box-shadow: #eb2b3d;
+  outline: none;
+}
+
+#form-submit-btn{
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  padding: 12px ;
+}
+
+/* ----------------------*/
+
+
+/* Media-------------------------------------------------------------------------------- */
+@media (min-width: 200px) and (max-width: 768px) {
+  .r-nav {
+    background: #fff !important;
+  }
+  .r-nav .container {
+    width: 85%;
+  }
+  nav .navbar-brand {
+    font-size: 30px;
+    color:#eb2b3d;
+  }
+  .navbar .hamburger {
+    color: #000;
+  }
+  nav .navbar-nav .nav-link {
+    color:  #eb2b3d !important;
+  }
+
+  .content-box h1 {
+    font-size: 30px;
+  }
+  .content-box p {
+    font-size: 16px;
+  }
+  header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: -700px 0;
+  }
+}
