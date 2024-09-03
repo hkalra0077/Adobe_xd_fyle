@@ -18,7 +18,7 @@ Fyle Web Development Assignment
 <h3><u>
 To run the app globally</u></h3>
 
-<h4 style="font-size:12px">Click on this link - adobe-xd-fyle.vercel.app</h4>
+<h4 style="font-size:12px">Click on this link - https://adobe-xd-fyle.vercel.app</h4>
 
 <h3><u>To run the app locally on your machine</u></h3>
 
